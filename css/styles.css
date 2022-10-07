@@ -16,15 +16,9 @@
     --white-colour: #ffffff;
  }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
-
-    margin-top: 0;
 
     background-color: var(--bgc-primary);
     color: var(--text-colour-primary);
@@ -53,7 +47,7 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1170px;
+    width: 1200px;
 }
 
 /* header styles */
@@ -212,7 +206,7 @@ img {
 }
 
 .features-list .item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
 }
 
 .features-icon {
@@ -228,6 +222,7 @@ img {
     line-height: 1.14;
     text-transform: uppercase;
 
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -237,7 +232,7 @@ img {
 
     color: var(--text-colour-secondary);
 
-    margin-bottom: 0;
+    margin: 0;
 }
 
 /* Activity styles */
@@ -556,11 +551,12 @@ img {
     color: inherit;
 }
 
-.project-link:hover {
+.project-link:hover,
+.project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-box-thumb {
+/* .project-box-thumb {
     position: relative;
     overflow: hidden;
 }
@@ -592,7 +588,7 @@ img {
     letter-spacing: inherit;
 
     color: var(--white-colour);
-}
+} */
 
 .project-descr {
     padding: 20px 24px;
