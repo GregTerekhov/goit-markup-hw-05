@@ -775,7 +775,7 @@ img {
 
   transform: translatey(100%);
   transition: transform 250ms var(--timing-function),
-    opasity 250ms var(--timing-function);
+    opacity 250ms var(--timing-function);
 }
 
 .project-link:hover .project-box-thumb::before,
@@ -803,7 +803,7 @@ img {
 
   transform: translatey(100%);
   transition: transform 250ms var(--timing-function),
-    opasity 250ms var(--timing-function);
+    opacity 250ms var(--timing-function);
   /* transform blackface-visibility */
 }
 
@@ -863,4 +863,8 @@ img {
 .phone:hover,
 .phone:focus {
   color: var(--accent-colour);
+}
+
+.modal-open {
+  overflow: hidden;
 }
