@@ -119,7 +119,7 @@ img {
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.172;
   letter-spacing: 0.02em;
   text-decoration: none;
 
@@ -143,7 +143,8 @@ img {
 .current::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
+  box-sizing: padding-box;
 
   width: 100%;
   height: 4px;
@@ -154,7 +155,7 @@ img {
 
 .feedback {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 50px;
 }
 
@@ -162,6 +163,7 @@ img {
   position: relative;
 
   display: flex;
+  justify-content: center;
   align-items: center;
 
   color: var(--text-colour-secondary);
@@ -175,7 +177,7 @@ img {
 .feedback .link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 
   display: block;
   width: 100%;
@@ -380,7 +382,7 @@ img {
 /* Activity styles */
 
 .activity {
-  padding: 94px 0;
+  padding-bottom: 94px;
 }
 
 .activity-title {
@@ -570,7 +572,7 @@ img {
 
 .client-logo-link:hover,
 .client-logo-link:focus {
-  border: 1px solid var(--accent-colour);
+  border-color: var(--accent-colour);
   color: var(--accent-colour);
 }
 
