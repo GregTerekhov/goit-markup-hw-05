@@ -143,7 +143,7 @@ img {
 .current::after {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   box-sizing: padding-box;
 
   width: 100%;
@@ -521,16 +521,16 @@ img {
     background-color 250ms var(--timing-function);
 }
 
-.social-link .icon {
-  fill: currentColor;
-
-  transition: fill 250ms var(--timing-function);
-}
-
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-colour);
   color: var(--icons-colour-hover);
+}
+
+.social-link .icon {
+  fill: currentColor;
+
+  transition: fill 250ms var(--timing-function);
 }
 
 /* Clients styles */
